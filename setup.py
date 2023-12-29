@@ -1,26 +1,12 @@
 from setuptools import setup, find_packages
 from typing import List
 
-HYPEN_E_DOT='-e .'
-
-'''def get_requiremet(file_path:str)->List[str]:
-    requirements = []
-    with open(file_path) as f:
-        requirements=f.readlines()
-        requirements=[req.replace("\n","")for req in requirements]
-        
-        if HYPEN_E_DOT in requirements:
-            requirements.remove(HYPEN_E_DOT)
-    return requirements'''
-
-   
 with open('README.md', 'r', encoding='utf-8') as f:
-    long_description = f.read()     
-   
+    long_description = f.read()
 
-__version__ = "0.0.4"
-REPO_NAME = "mongodb_connector"
-PKG_NAME= "MongoDB-Connect"
+__version__ = "0.0.2"
+REPO_NAME = "mongodbconnectorpkg"
+PKG_NAME = "mongoDBconnect"
 AUTHOR_USER_NAME = "RajeshThakur1"
 AUTHOR_EMAIL = "rajeshthakur1r@gmail.com"
 
@@ -38,6 +24,4 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    
-    
 )
